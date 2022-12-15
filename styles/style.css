@@ -88,6 +88,23 @@ background: url(./../images/webcafe-logo.png) no-repeat 0 0/100%;
     }
 }  
 
+/* 데스크탑 디바이스 (Desktop Device) */
+@media (min-width: 769px) {
+    /* 데스크탑 헤더 */
+    .appHeader {
+      max-width: var(--container-width);
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    /* 데스크탑 로고 */
+    .logo {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+}  
+
 /* 고해상도 배경이미지 미디어쿼리 */
 @media (-webkit-min-device-pixel-ratio: 2),
 (min--moz-device-pixel-ratio: 2),
