@@ -6,14 +6,13 @@
 @import url(./base.css);
 
 /* *공통 스타일 */
-
 /* body {
     background-color: var(--yellow);
     font-size: 5vw;
     !왠만하면 vw사용하지 말것! -> ui설계의 어려움
     font-size: var(--text-xl);
 } */
-
+/* *미디어 쿼리 써보기 */
 /* @media (min-width: 320px) and (max-width: 768px){
     body{
         background-color: var(--green);
@@ -25,7 +24,6 @@
         font-size: var(--text-lg);
     }
 } */
-
 /* @media (min-width: 1000px){
     body {
         background-color: var(--blue);
@@ -37,7 +35,6 @@
     width: 60%;
     margin: 0 auto;
 }
-
 .book__cover{
     background-color: darkgrey;
     width: 30%;
