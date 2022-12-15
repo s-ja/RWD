@@ -43,3 +43,10 @@ body {
     width: 60%;
     margin: 0 auto;
 }
+
+.book__cover{
+    background-color: darkgrey;
+    width: 30%;
+    margin: 0 auto;
+
+}
