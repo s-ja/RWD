@@ -26,11 +26,12 @@ body {
   background-color: #fff;
 }
 
-/* 유연한 미디어 */
-img {
+/* * 유연한 미디어 */
+
+/* img {
   max-width: 100%;
   height: auto;
-}
+} */
 
 video {
   width: 100%;
