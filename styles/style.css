@@ -41,7 +41,7 @@
     margin: 0 auto;
 } */
 
-/* 모든 디바이스 (All Device) */
+/* !모든 디바이스 (All Device) */
 /* 공통 헤더 */
 .appHeader {
     position: relative;
@@ -73,8 +73,73 @@ background: url(./../images/webcafe-logo.png) no-repeat 0 0/100%;
     justify-content: flex-end;
 }
 
+/* 공통 검색 폼 */
+input[type="search"] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+  
+  .searchForm__group {
+    display: flex;
+    flex-flow: row nowrap;
+    /* justify-content: flex-end; */
+    /* background-color: darkred; */
+
+    /* gap: var(--spacing-xs); */
+}
+  
+  .searchForm__group .formInput {
+    margin-right: var(--spacing-xs);
+}
+  
+  .searchForm__group .formInput__input {
+    width: 100%;
+    height: 2rem;
+    border: 1px solid var(--silver);
+    background: var(--white);
+    border-radius: 0.25rem;
+    padding: var(--spacing-sxxs) var(--spacing-xxs);
+}
+  
+  .button {
+    cursor: pointer;
+    height: 2rem;
+    border-radius: 0.25rem;
+    padding: var(--spacing-sxxs) var(--spacing-xxs);
+    /* white-space: nowrap; */
+    /* flex-shrink: 0; */
+    flex: 0 0 auto;
+    font-size: var(--text-sm);
+}
+  
+  .button--none {
+    border: 0;
+    padding: 0;
+    background: transparent;
+}
+  
+  .button--fill {
+    background: var(--secondary-color);
+    color: var(--white);
+    border: 0;
+}
+  
+  .button--outline {
+    background: transparent;
+    color: var(--secondary-color);
+    border: 1px solid currentColor;
+}
+  
+  /* 공통 메인 메뉴 */
+  .menu__link {
+    display: block;
+    padding: var(--spacing-xs);
+    font-size: var(--text-md);
+    font-weight: 700;
+}
+
 /* 모바일 디바이스 (Mobile Device) */
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 768px) {
     /* 모바일 헤더 */
     .appHeader {
       background: var(--primary-color);
@@ -86,6 +151,11 @@ background: url(./../images/webcafe-logo.png) no-repeat 0 0/100%;
       order: -1;
       font-size: var(--text-sm);
     }
+
+    /* 모바일 검색 폼 */
+    .searchForm__group .formInput {
+        flex-grow: 1;
+    }
 }  
 
 /* 데스크탑 디바이스 (Desktop Device) */
@@ -95,6 +165,8 @@ background: url(./../images/webcafe-logo.png) no-repeat 0 0/100%;
       max-width: var(--container-width);
       margin-left: auto;
       margin-right: auto;
+      /* margin: 0 auto; */
+      background-color: maroon;
     }
   
     /* 데스크탑 로고 */
@@ -102,6 +174,16 @@ background: url(./../images/webcafe-logo.png) no-repeat 0 0/100%;
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
+    }
+
+    /* 데스크탑 검색 폼 */
+    .searchForm__group {
+        justify-content: flex-end;
+    }
+
+    .searchForm__group .formInput {
+        width: 25rem;
+        /* 25 * 16 = 400(px) */
     }
 }  
 
