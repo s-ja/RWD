@@ -369,6 +369,7 @@ input[type="search"] {
     transform: translateY(50%) rotate(-45deg);
   } */
 
+  /* 모바일 메인메뉴 제어버튼 */
   .buttonWrapper {
     padding: 0.25rem;
     overflow: hidden;

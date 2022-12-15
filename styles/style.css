@@ -9,7 +9,7 @@
 /* body {
     background-color: var(--yellow);
     font-size: 5vw;
-    !왠만하면 vw사용하지 말것! -> ui설계의 어려움
+    *왠만하면 vw사용하지 말것! -> ui설계의 어려움
     font-size: var(--text-xl);
 } */
 /* *미디어 쿼리 써보기 */
@@ -42,6 +42,7 @@
 } */
 
 /* !모든 디바이스 (All Device) */
+/* !공통 스타일 */
 /* 공통 헤더 */
 .appHeader {
     position: relative;
@@ -58,11 +59,11 @@
 }
   
 .logo__link {
-display: block;
-width: 100%;
-height: 100%;
-background: url(./../images/webcafe-logo.png) no-repeat 0 0/100%;
-/* background-size: 100% 100%; */
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(./../images/webcafe-logo.png) no-repeat 0 0/100%;
+    /* background-size: 100% 100%; */
 }
 
 
@@ -100,6 +101,8 @@ input[type="search"] {
     border-radius: 0.25rem;
     padding: var(--spacing-sxxs) var(--spacing-xxs);
 }
+
+/* 공통 검색 폼  - 버튼 */
   
   .button {
     cursor: pointer;
@@ -130,7 +133,8 @@ input[type="search"] {
     border: 1px solid currentColor;
 }
   
-  /* 공통 메인 메뉴 */
+/* 공통 메인 메뉴 */
+
   .menu__link {
     display: block;
     padding: var(--spacing-xs);
@@ -138,7 +142,7 @@ input[type="search"] {
     font-weight: 700;
 }
 
-/* 모바일 디바이스 (Mobile Device) */
+/* !모바일 디바이스 (Mobile Device) */
 @media (min-width: 320px) and (max-width: 768px) {
     /* 모바일 헤더 */
     .appHeader {
@@ -158,13 +162,16 @@ input[type="search"] {
     }
 }  
 
-/* 데스크탑 디바이스 (Desktop Device) */
+/* !데스크탑 디바이스 (Desktop Device) */
+
 @media (min-width: 769px) {
+    
     /* 데스크탑 헤더 */
     .appHeader {
       max-width: var(--container-width);
       margin-left: auto;
       margin-right: auto;
+
       /* margin: 0 auto; */
       background-color: maroon;
     }
@@ -174,6 +181,8 @@ input[type="search"] {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
+      /* float: left; */
+      /* background-color: red; */
     }
 
     /* 데스크탑 검색 폼 */
