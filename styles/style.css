@@ -160,6 +160,13 @@ input[type="search"] {
     .searchForm__group .formInput {
         flex-grow: 1;
     }
+
+    /* *모바일 메뉴 제어 버튼 시작 */
+
+    
+    
+    /* *모바일 메뉴 제어 버튼 끝 */
+
 }  
 
 /* !데스크탑 디바이스 (Desktop Device) */
@@ -193,6 +200,11 @@ input[type="search"] {
     .searchForm__group .formInput {
         width: 25rem;
         /* 25 * 16 = 400(px) */
+    }
+
+    /* 데스크탑 메인메뉴 제어버튼 */
+    .button--burger {
+      display: none;
     }
 }  
 
