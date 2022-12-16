@@ -324,7 +324,7 @@ input[type="search"] {
   .button--burger.is--active .button--burgerBarMiddle {
     transform: translate(-150%, -50%);
   }
-  
+
   .button--burger.is--active .button--burgerBarBottom {
     top: 50%;
     transform: translateY(-50%) rotate(-45deg);
@@ -343,7 +343,7 @@ input[type="search"] {
       margin-right: auto;
 
       /* margin: 0 auto; */
-      background-color: maroon;
+      /* background-color: maroon; */
     }
   
     /* 데스크탑 로고 */
@@ -369,6 +369,42 @@ input[type="search"] {
     .button--burger {
       display: none;
     }
+
+    /* *데스크탑 메인메뉴 */
+
+    .menu{
+      background-color: var(--secondary-color);
+      color: var(--white);
+      /* width: 100%; */
+      padding: var(--spacing-base) var(--spacing-lg);
+    }
+    
+    .menu__list{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      max-width: var(--container-width);
+      height: 100px;
+      margin: 0 auto;
+      /* padding: 20px 0; */
+      /* background-color: maroon; */
+    }
+
+    .menu__item{
+      padding: var(--spacing-sm) 0;
+    }
+
+    .menu__link{
+      text-shadow: 1px 1px 0 var(--black), -1px -1px 0 var(--black);
+      /* background-color: black; */
+      display: block;
+      /* padding: 16px; */
+      padding: var(--spacing-md) var(--spacing-lg);
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
 }  
 
 /* 고해상도 배경이미지 미디어쿼리 */
