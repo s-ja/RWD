@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.container{
+    background: darkslategrey;
+    border: 2px solid maroon;
+    color: antiquewhite;
+    /* display: flex; */
+    /* flex-flow: row wrap; */
+    /* padding: 12px 12px; */
+    /* row-gap: 24px; */
+    /* padding: 12px 12px; */
+}
+
+.group1 .box{
+    background: darkgray;
+}
+.group2 {
+    background: darkblue;
+}
+.group3 {
+    background: darkcyan;
+}
+.group4 {
+    background: darkgoldenrod;
+}
+.group5 {
+    background: darkgreen;
+}
+.group6 {
+    background: darkkhaki;
+}
+.group7 {
+    background: darkmagenta;
+}
+.group8 {
+    background: darkolivegreen;
+}
+.group9 {
+    background: darkorange;
+}
+.group10 {
+    background: darkorchid;
+}
+.group11 {
+    background: darkred;
+}
+.group12 {
+    background: darkseagreen;
+}
