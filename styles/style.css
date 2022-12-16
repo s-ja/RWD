@@ -74,11 +74,11 @@
     justify-content: flex-end;
 }
 
-/* 공통 검색 폼 */
-/* input[type="search"] {
+/* !공통 검색 폼 */
+input[type="search"] {
     -webkit-appearance: none;
     appearance: none;
-} */
+}
   
 .searchForm__group {
     display: flex;
@@ -294,9 +294,9 @@
     height: 2rem;
   }
 
-  .button--burger:focus {
-    /* outline-offset: 2px; */
-  }
+  /* .button--burger:focus {
+    outline-offset: 2px;
+  } */
 
   .button--burgerBarTop,
   .button--burgerBarMiddle,
