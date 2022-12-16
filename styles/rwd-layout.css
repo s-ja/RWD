@@ -74,6 +74,10 @@ div[class^="group"]{
         width: 50%;
         /* height: 100px; */
     }
+
+    div.group1, div.group4{
+        width: 100%;
+    }
 }
 
 /* ! 1280px 이상일때 */
@@ -81,5 +85,13 @@ div[class^="group"]{
     div[class^="group"]{
         width: 25%;
         /* height: 200px; */
+    }
+
+    div.group2{
+        order: 1;
+    }
+
+    div.group1, div.group12{
+        width: 75%;
     }
 }
