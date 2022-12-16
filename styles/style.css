@@ -148,6 +148,7 @@ input[type="search"] {
     .appHeader {
       background: var(--primary-color);
       color: var(--white);
+      position: relative;
     }
   
     /* 모바일 멤버서비스 */
@@ -163,7 +164,7 @@ input[type="search"] {
 
     /* *모바일 메뉴 제어 버튼 시작 */
 
-    .buttonWrapper {
+    /* .buttonWrapper {
       background: gold;
       overflow: hidden;
     }
@@ -172,21 +173,20 @@ input[type="search"] {
       width: 30px;
       height: 30px;
       background-color: blue;
-      /* padding: 5px; */
+      padding: 5px;
 
-      /* display: flex;
+      display: flex;
       flex-flow: column wrap;
-      justify-content: space-around; */
+      justify-content: space-around;
 
       position: relative;
     }
     
     [class*="button--burgerBar"]{
       background: var(--white);
-      /* display: block; */
+      display: block;
       width: 100%;
       height: 20%;
-      /* 20% = 6px */
       border-radius: 10px;
 
       position: absolute;
@@ -216,9 +216,119 @@ input[type="search"] {
     .is--active .button--burgerBarBottom{
       top: 50%;
       transform: translate(0%, -50%) rotate(45deg);
-    }
+    } */
 
     /* *모바일 메뉴 제어 버튼 끝 */
+
+    
+    /* 모바일 메인메뉴 제어버튼 */
+  /* .buttonWrapper {
+    overflow: hidden;
+    position: absolute;
+    top: 3.75rem;
+    right: var(--spacing-lg);
+    padding: 0.25rem;
+  }
+  .button--burger {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+  }
+
+  .button--burger:focus {
+    outline-offset: 2px;
+  }
+
+  .button--burgerBarTop,
+  .button--burgerBarMiddle,
+  .button--burgerBarBottom {
+    width: 100%;
+    height: 20%;
+    background: var(--white);
+    border-radius: 20px;
+    transition: all 350ms;
+  }
+
+  .is--active .button--burgerBarTop {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  .is--active .button--burgerBarMiddle {
+    transform: translateX(-150%);
+  }
+
+  .is--active .button--burgerBarBottom {
+    position: relative;
+    top: -50%;
+    transform: translateY(50%) rotate(-45deg);
+  } */
+
+  /* 모바일 메인메뉴 제어버튼 */
+  .buttonWrapper {
+    padding: var(--spacing-xxs);
+    overflow: hidden;
+    position: absolute;
+
+    top: 3.75rem;
+    right: var(--spacing-lg);
+    
+    transform: translate(-0.25rem, -0.25rem);
+    /* 패딩값만큼 위치로 끌어 올려 주는 역할 */
+  }
+
+  .button--burger {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .button--burger:focus {
+    /* outline-offset: 2px; */
+  }
+
+  .button--burgerBarTop,
+  .button--burgerBarMiddle,
+  .button--burgerBarBottom {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background: var(--white);
+    border-radius: 0.25rem;
+    left: 0;
+    transition: all 200ms;
+  }
+
+  .button--burgerBarTop {
+    top: 0;
+  }
+
+  .button--burgerBarMiddle {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .button--burgerBarBottom {
+    top: 100%;
+    transform: translateY(-100%);
+  }
+  
+  .button--burger.is--active .button--burgerBarTop {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+  
+  .button--burger.is--active .button--burgerBarMiddle {
+    transform: translate(-150%, -50%);
+  }
+  
+  .button--burger.is--active .button--burgerBarBottom {
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+  }
 
 }  
 
