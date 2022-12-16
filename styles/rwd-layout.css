@@ -1,45 +1,78 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
 }
 
-.container{
-    background: silver;
-    border: 1px solid red;
-}
-
-.box1{
+.group1{
     background: darkgray;
 }
-.box2{
+.group2{
     background: darkblue;
 }
-.box3{
+.group3{
     background: darkcyan;
 }
-.box4{
+.group4{
     background: darkgoldenrod;
 }
-.box5{
+.group5{
     background: darkgreen;
 }
-.box6{
+.group6{
     background: darkkhaki;
 }
-.box7{
+.group7{
     background: darkmagenta;
 }
-.box8{
+.group8{
     background: darkolivegreen;
 }
-.box9{
+.group9{
     background: darkorange;
 }
-.box10{
+.group10{
     background: darkorchid;
 }
-.box11{
+.group11{
     background: darkred;
 }
-.box12{
+.group12{
     background: darkseagreen;
+}
+
+/* !모든 디바이스 */
+.container{
+    background: darkslategrey;
+    border: 2px solid maroon;
+    color: antiquewhite;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 12px 12px;
+    /* row-gap: 24px; */
+}
+
+div[class^="group"]{
+    width: 100%;
+    height: 50px;
+    margin: 12px 0;
+    padding: 0 12px;
+}
+
+/* !768px 이상일때 */
+@media (min-width: 768px){
+    div[class^="group"]{
+        width: 50%;
+        height: 100px;
+    }
+}
+
+/* ! 1280px 이상일때 */
+@media (min-width: 1280px){
+    div[class^="group"]{
+        width: 25%;
+        height: 200px;
+    }
 }
