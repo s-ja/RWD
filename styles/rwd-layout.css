@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+}
+
+.container{
+    background: silver;
+    border: 1px solid red;
+}
+
+.box1{
+    background: darkgray;
+}
+.box2{
+    background: darkblue;
+}
+.box3{
+    background: darkcyan;
+}
+.box4{
+    background: darkgoldenrod;
+}
+.box5{
+    background: darkgreen;
+}
+.box6{
+    background: darkkhaki;
+}
+.box7{
+    background: darkmagenta;
+}
+.box8{
+    background: darkolivegreen;
+}
+.box9{
+    background: darkorange;
+}
+.box10{
+    background: darkorchid;
+}
+.box11{
+    background: darkred;
+}
+.box12{
+    background: darkseagreen;
+}
