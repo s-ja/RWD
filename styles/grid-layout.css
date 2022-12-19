@@ -93,12 +93,51 @@ body{
 
 /* !공통 레이아웃 */
 
+.container{
+    border: 5px solid darkslategrey;
+    margin: 50px;
+    display: grid;
+    gap: 24px;
+    grid-template-rows: repeat(3, 200px);
+}
+
 /* !모바일 레이아웃 */
 @media(max-width: 768px){
-
+    .container{
+        /* grid-template-columns: 1fr 1fr; */
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-rows: auto auto auto; */
+    }
+    .group2{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
 }
 
 /* !데스트탑 레이아웃 */
-@media(min-width: 769px){
-    
+/* 소수점 픽셀을 위해 겹치게 설정하기도 함 */
+/* @media(min-width: 768px){ */
+    @media(min-width: 769px){
+        .container{
+            grid-template-columns: repeat(12, 1fr);
+            /* grid-template-rows: auto auto auto; */
+        }
+        .group1{
+            grid-area: 2/ 1/ 4/ 5;
+        }
+        .group2{
+            grid-column: 1/13;
+            grid-row: 1/2;
+        }
+        .group3{
+            grid-area: 3/6/4/13;
+        }
+        .group4{
+            grid-area: 2/5/3/10;
+        }
+        .group5{
+            grid-area: 2/10/3/13;
+        }
 }
