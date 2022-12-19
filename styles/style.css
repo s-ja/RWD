@@ -149,6 +149,79 @@ input[type="search"] {
   padding: var(--spacing-base) var(--spacing-lg);
 }
 
+/* *공통 메인 컨텐츠 제목 */
+
+[class*="__title"]{
+  margin-bottom: var(--spacing-base);
+  /* font-weight: 700;
+  font-size: var(--text-md); */
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  
+  /* padding-left: 3.75rem; */
+
+  /* display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4rem 4rem; */
+}
+
+[class*="__koTitle"]{
+  font-weight: 700;
+  font-size: var(--text-md);
+  /* align-self: end; */
+}
+
+[class*="__enTitle"]{
+  font-weight: 400;
+  font-size: var(--text-base);
+  /* align-self: start; */
+}
+
+.sprite{
+  background: url("../assets/images/sprite_main.png") no-repeat;
+  height: 3.75rem;
+  padding-left: 4rem;
+}
+
+.spriteBook{
+  /* background-position-y: top; */
+  background-position: 0 0;
+}
+.spriteNews{
+  /* background-position-y: -230px; */
+  background-position: 0 -230px;
+}
+.spriteBoard{
+  /* background-position-y: -345px; */
+  background-position: 0 -115px;
+}
+.spriteFavorite{
+  /* background-position-y: -460px; */
+  background-position: 0 -345px;
+}
+.spriteTwitter{
+  /* background-position-y: -575px; */
+  background-position: 0 -460px;
+}
+
+.accentBook{
+  color: var(--accent-book);
+}
+.accentNews{
+  color: var(--accent-news);
+}
+.accentBoard{
+  color: var(--accent-board);
+}
+.accentFavorite{
+  color: var(--accent-favorite);
+}
+.accentTwitter{
+  color: var(--accent-twitter);
+}
+
 /* *공통 추천 서적 */
 .book{
   /* background: lightblue; */
@@ -536,6 +609,7 @@ input[type="search"] {
       margin-right: auto;
 
       grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: auto;
       grid-template-areas:
       "news news news news news news news news news news news news"
       "book book book book twitter twitter twitter twitter twitter favorite favorite favorite"
