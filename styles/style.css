@@ -142,7 +142,7 @@ input[type="search"] {
     font-weight: 700;
 } */
 
-/* 공통 메인 컨텐츠 */
+/* !공통 메인 컨텐츠 */
 .appMain{
   display: grid;
   gap: var(--spacing-base);
@@ -152,23 +152,29 @@ input[type="search"] {
 /* *공통 추천 서적 */
 .book{
   background: lightblue;
+  grid-area: book;
 }
 /* *공통 새소식 */
 .news{
   background: lightcoral;
+  grid-area: news;
 }
 /* *공통 추천 서적 */
 .board{
   background: lightcyan;
+  grid-area: board;
 }
 /* 공*통 추천 서적 */
 .favorite{
   background: lightgoldenrodyellow;
+  grid-area: favorite;
 }
 /* *공통 트위터 */
 .twitter{
   background: lightgray;
+  grid-area: twitter;
 }
+
 
 .menu__link {
   display: block;
@@ -511,23 +517,15 @@ input[type="search"] {
 
 /* ! 데스크탑 메인 컨텐츠 */
 .appMain{
-  grid-template-columns: 12fr;
-  grid-template-rows: 5;
-}
-.book{
+  max-width: var(--container-width);
+  margin-left: auto;
+  margin-right: auto;
 
-}
-.news{
-  grid-column-start: 1;
-  grid-column-end: 13;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-.board{
-}
-.favorite{
-}
-.twitter{
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas:
+    "news news news news news news news news news news news news"
+    "book book book book twitter twitter twitter twitter twitter favorite favorite favorite"
+    "book book book book . board board board board board board board";
 }
 
 /* 고해상도 배경이미지 미디어쿼리 */

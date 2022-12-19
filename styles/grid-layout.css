@@ -111,7 +111,7 @@ body{
     grid-area: box3;
 }
 .group4{
-    grid-area: box5;
+    grid-area: box4;
 }
 .group5{
     grid-area: box5;
@@ -121,15 +121,19 @@ body{
 @media(max-width: 768px){
     .container{
         /* grid-template-columns: 1fr 1fr; */
+        /* grid-template-columns: repeat(2, 1fr); */
         grid-template-columns: repeat(2, 1fr);
         /* grid-template-rows: auto auto auto; */
+
+        grid-template-areas: "box2 box2" "box1 box3" "box4 box5";
     }
-    .group2{
+    /* .group2{
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 2;
-    }
+    } */
+
 }
 
 /* !데스트탑 레이아웃 */
@@ -139,8 +143,12 @@ body{
         .container{
             grid-template-columns: repeat(12, 1fr);
             /* grid-template-rows: auto auto auto; */
+            grid-template-areas:
+            "box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 "
+            "box1 box1 box1 box1 box5 box5 box5 box5 box5 box4 box4 box4 "
+            "box1 box1 box1 box1 . box3 box3 box3 box3 box3 box3 box3 ";
         }
-        .group1{
+        /* .group1{
             grid-area: 2/ 1/ 4/ 5;
         }
         .group2{
@@ -155,5 +163,5 @@ body{
         }
         .group5{
             grid-area: 2/10/3/13;
-        }
+        } */
 }
