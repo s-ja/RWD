@@ -297,14 +297,14 @@ input[type="search"] {
 }
 
 .board__title{
-  background-color: lightblue;
+  /* background-color: lightblue; */
   /* margin-right: auto; */
 
   /* flex: 0 1 auto; 기본값! */
   flex: 1 1 auto;
 }
 .board__list{
-  background-color: lightcoral;
+  /* background-color: lightcoral; */
   display: flex;
   flex-flow: column nowrap;
   gap: var(--spacing-sm);
@@ -314,7 +314,7 @@ input[type="search"] {
   width: 100%;
 }
 .board__item{
-  background-color: lightgoldenrodyellow;
+  /* background-color: lightgoldenrodyellow; */
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -326,7 +326,7 @@ input[type="search"] {
 } */
 
 .board__link{
-  background-color: lightgray;
+  /* background-color: lightgray; */
   /* font-size: var(--text-sm); */
   font-weight: 300;
   flex: 0 1 auto;
@@ -344,7 +344,7 @@ input[type="search"] {
   text-align: right;
 }
 .board__more{
-  background-color: lightsteelblue;
+  /* background-color: lightsteelblue; */
   /* margin-left: auto; */
 
   /* transform: translateY(0.5rem); */
