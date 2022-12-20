@@ -362,6 +362,59 @@ input[type="search"] {
   grid-area: twitter;
 }
 
+/* .twitter__title{
+} */
+
+/* .twitter__container{
+  background-color: lightcoral;
+} */
+
+.twitter__userInfo{
+  /* background-color: lightcyan; */
+
+  /* display: flex; */
+  display: inline-flex;
+  gap: var(--spacing-xs);
+}
+
+/* .twitter__userName{
+  background-color: lightgoldenrodyellow;
+}
+.twitter__userId{
+  background-color: lightgreen;
+  text-indent: var(--text-xs);
+} */
+
+.twitter__userProfile{
+  float: right;
+  width: 25%;
+  aspect-ratio: 1/1;
+  min-width: 3.125rem;
+  max-width: 5.625rem;
+
+  margin-left: var(--spacing-xs);
+  
+  shape-outside: circle(50%);
+}
+
+
+.twitter__userProfileImage{
+  object-fit: cover;
+  object-position: 30% 40%;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+}
+/* .twitter__summary{
+  background-color: lightseagreen;
+} */
+.twitter__date{
+  /* background-color: lightslategray; */
+  display: block;
+  margin-top: var(--spacing-xs);
+}
+
 
 .menu__link {
   display: block;
