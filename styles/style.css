@@ -614,6 +614,22 @@ input[type="search"] {
     grid-template-areas: "book" "news" "board" "favorite" "twitter";
   }
 
+  /* !모바일 인기 사이트 */
+  .favorite{
+    /* background-color: lightgreen; */
+  }
+
+  .favorite__item{
+    margin-top: var(--spacing-xs);
+  }
+
+  .favorite__link::after{
+    content: attr(data-tooltip);
+    color: var(--accent-favorite);
+    font-size: var(--text-sm);
+    margin-left: var(--spacing-xs);
+  }
+
 }  
 
 
