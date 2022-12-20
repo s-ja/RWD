@@ -41,7 +41,14 @@
     margin: 0 auto;
 } */
 
+
 /* !모든 디바이스 (All Device) */
+
+/* *공통 아이콘 (Font Awesome) */
+.far, .fas {
+  margin-right: var(--spacing-xs);
+}
+
 /* !공통 스타일 */
 /* 공통 헤더 */
 .appHeader {
@@ -272,6 +279,13 @@ input[type="search"] {
   /* background: lightcoral; */
   grid-area: news;
 }
+
+.news__date{
+  display: block;
+  margin-top: var(--spacing-base);
+  text-align: right;
+}
+
 /* *공통 추천 서적 */
 .board{
   /* background: lightcyan; */
