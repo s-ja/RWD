@@ -149,9 +149,9 @@ input[type="search"] {
   padding: var(--spacing-base) var(--spacing-lg);
 }
 
-/* *공통 메인 컨텐츠 제목 */
+/* *공통 메인 컨텐츠 섹션 제목 */
 
-[class*="__title"]{
+.appMain [class*="__title"]{
   margin-bottom: var(--spacing-base);
   /* font-weight: 700;
   font-size: var(--text-md); */
@@ -167,7 +167,7 @@ input[type="search"] {
   grid-template-rows: 4rem 4rem; */
 }
 
-[class*="__koTitle"]{
+.appMain [class*="__koTitle"]{
   font-weight: 700;
   font-size: var(--text-md);
   /* align-self: end; */
@@ -222,9 +222,16 @@ input[type="search"] {
   color: var(--accent-twitter);
 }
 
+
+/* *공통 메인 콘텐츠 섹션 본문 */
+.appMain [class*="__summary"] {
+  line-height: 1.6;
+  margin-top: var(--spacing-base);
+}
+
+
 /* *공통 추천 서적 */
 .book{
-  /* background: lightblue; */
   grid-area: book;
 }
 
@@ -259,6 +266,7 @@ input[type="search"] {
   display: block;
   font-size: var(--text-xl);
 }
+
 /* *공통 새소식 */
 .news{
   /* background: lightcoral; */
