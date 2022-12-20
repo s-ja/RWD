@@ -286,12 +286,64 @@ input[type="search"] {
   text-align: right;
 }
 
-/* *공통 추천 서적 */
+/* *공통 게시판 */
+
 .board{
   /* background: lightcyan; */
   grid-area: board;
+  display: flex;
+  /* flex-flow: column nowrap; */
+  flex-flow: row wrap;
 }
-/* 공*통 추천 서적 */
+
+.board__title{
+  /* background-color: lightblue; */
+  /* margin-right: auto; */
+
+  /* flex: 0 1 auto; 기본값! */
+  flex: 1 1 auto;
+}
+.board__list{
+  /* background-color: lightcoral; */
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--spacing-sm);
+  order: 1;
+  flex: 1 1 auto;
+}
+.board__item{
+  /* background-color: lightgoldenrodyellow; */
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  /* margin-top: var(--spacing-sm); */
+}
+/* .board__item :nth-child(1){
+  margin-top: 0;
+} */
+
+.board__link{
+  /* background-color: lightgray; */
+  /* font-size: var(--text-sm); */
+  font-weight: 300;
+  flex: 1 1 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.board__date{
+  flex: 0 0 auto;
+  font-size: var(--text-sm);
+}
+.board__more{
+  /* background-color: lightsteelblue; */
+  /* margin-left: auto; */
+
+  /* transform: translateY(0.5rem); */
+  padding-top: var(--spacing-md);
+}
+
+/* *공통 추천 서적 */
 .favorite{
   /* background: lightgoldenrodyellow; */
   grid-area: favorite;
