@@ -229,6 +229,8 @@ input[type="search"] {
 /* 공통 게시판 */
 .board {
   position: relative;
+
+  overflow: hidden;
 }
 
 .board__item {
@@ -239,10 +241,10 @@ input[type="search"] {
 
 .board__link {
   /* flex-grow: 1; */
-  width: calc(100% - 6rem);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  width: calc(100% - 6rem);
 }
 
 .board__date {
