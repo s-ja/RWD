@@ -1,0 +1,9 @@
+.svg1 path{
+    transition: all 100ms;
+}
+
+.svg1 path:hover {
+    /* color: blue; */
+    /* background-color: blue; */
+    fill: darkred;
+}
