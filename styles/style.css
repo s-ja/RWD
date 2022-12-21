@@ -709,6 +709,17 @@ input[type="search"] {
     margin-left: var(--spacing-xs);
   }
 
+  /* *모바일 푸터 */
+  .appFooter{
+    font-size: var(--text-sm);
+  }
+
+  /* *모바일 푸터 */
+  .address{
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
 }  
 
 
